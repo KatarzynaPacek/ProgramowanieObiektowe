@@ -25,20 +25,20 @@ int main(int argc, char **argv)
 		printf("Zla liczba argumentow programu\n");
 		return 1;
 	}
-	int liczba=atoi(argv[1]);
-	char znak=argv[2][0];
-	if(znak!='f'&&znak!='a')
+	int number=atoi(argv[1]);
+	char mark=argv[2][0];
+	if(mark!='f'&&mark!='a')
 	{
-		printf("Nieznan symbol ciagu. Podaj f lub a\n");
+		printf("Nieznany symbol ciagu. Podaj f lub a\n");
 		return 1;
 	}
-	if(liczba<0)
+	if(number<0)
 	{
 		printf("Podano bledny indeks ciagu\n");
 		return 1;
 	}
-	if(znak=='f') printf("Fib(%d) = %d",liczba,Fib(liczba));
-	else if(znak=='a') printf("Arytm(%d) = %d",liczba,Arytm(liczba));
+	if(mark=='f') printf("Fib(%d) = %d",number,Fib(number));
+	else if(mark=='a') printf("Arytm(%d) = %d \n",number,Arytm(number));
 	return 0;
 	//printf("Hello, World!\n");
 }
